@@ -1,29 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+/*ESTE É O CABEÇALHO DO SITE*/
 
-#headerlogo {
+#cabeçalho {
+    list-style-type: none;
+    text-decoration: none;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    width: 1175px;
+}
+
+#logocabeçalho {
     height: 150px;
     width: 150px;
     margin: 0;
     padding: 0;
 }
-#Cabeçalho {
-    background-color: blue;
 
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    list-style-type: none;
-    width: 500px;
-    margin: 0;
-    padding: 0;
-}
 .container {
-    list-style-type: none;
-    text-decoration: none;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -32,8 +33,37 @@ body {
     padding: 0;
 }
 
-#wallpaper {
-    height: 475px;
-    width: 100%;
+#header1 {
+text-align: center;
 }
 
+#text1 {
+    text-align: center;
+}
+#div2 {
+    display: inline-block;
+    align-items: flex-start;
+    background-color: rgb(105, 139, 139);
+    margin: 200px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*MELHOR PRODUTO (IMAGEM + HEADING + TEXTO)*/
+#melhorprodutodiv {
+    display: flex;
+    background-color: blueviolet;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#melhorprodutoimg {
+    height: 400px;
+    width: 400px;
+}
+
+#melhorprodutoheadingtext {
+    display: inline-block;
+    text-align: center;
+}

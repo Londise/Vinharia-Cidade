@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Winery Shop</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="Cabeça da pagina">
+    <!--ESTE É O CABEÇALHO DA PAGINA QUE CONTÊM UM MENU DE NAVEGAÇÃO, UM LOGO, CARRINHO DE COMPRAS E A OPÇÃO PROCURAR-->
+    <header>
         <div class="container">
-            <img src="./images/headerlogo.png" id="headerlogo">
+            <img src="./images/headerlogo.png" id="logocabeçalho">
             <nav>
-                <ul id="Cabeçalho">
+                <ul id="cabeçalho">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#Nossos Vinhos">Nossos Vinhos</a></li>
                     <li><a href="#Contato">Contato</a></li>
@@ -20,21 +24,77 @@
             </nav>
         </div>
     </header>
-    <div class="container">
-        <img src="./images/wallpaper.webp" id="wallpaper"/>
+
+<!--ESTA É A IMAGEM PRINCIPAL DA PAGINA HOME, ELA DEVE ROLAR AUTOMATICAMENTE-->
+<div class="slider">
+
+    <div class="slides">
+        <!--Radio Buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio1">
+         <!--FIM Radio Buttons-->
+
+         <!--Slide images-->
+         <div class="slide first">
+            <img src="./images/wallpaper.webp" alt="Imagem 1"/>
+        </div>
+         <div class="slide">
+            <img src="./images/wallpaper2.jpg" alt="Imagem 2"/>
+        </div>
+         <div class="slide">
+            <img src="./images/wallpaper3.jpg" alt="Imagem 2"/>
+        </div>
+         <!--FIM Slide images-->
+
+         <!--Navigation auto-->
+         <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+        </div>
+        <!--FIM Navigation auto-->
+
+
+         </div>
+
+         <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+         </div>
+        
+
     </div>
 
-    
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus incidunt adipisci
-         repudiandae perferendis voluptas distinctio atque alias fugiat ad nihil? Eius ullam
-          culpa doloremque officia quo nobis quas consectetur dolorum?</p>
+</div>
 
-    <!-- Other sections of your website will go here -->
 
-    <footer>
-        <!-- Footer content goes here -->
-    </footer>
 
-    <script src="scripts.js"></script>
+
+
+
+<!--ESTE É O TEXTO DE APRESENTAÇÃO-->
+    <div id="div2">
+        <h1 id="header1">Quem Somos?</h1>
+        <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quisquam illo nihil sit inventore ea magnam quae rerum in, adipisci eius fugiat architecto praesentium assumenda eos laborum velit. Delectus, necessitatibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsam eum ullam, quaerat ipsum similique sunt qui rerum error consequatur, repellendus, quam accusantium autem laudantium! Magni maiores reprehenderit quibusdam eaque?
+        </p>
+    </div>
+
+
+    <div id="melhorprodutodiv">
+        <img src="./images/melhorproduto.webp" id="melhorprodutoimg"/>
+        <div id="melhorprodutoheadingtext">
+            <h1 id="melhorproduto">Nosso melhor produto</h1>
+            <p id="melhorprodutotext">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque debitis culpa repellendus possimus excepturi quae ipsam deleniti, dolorum explicabo eos aliquid voluptatem voluptas, saepe assumenda, quam aut dignissimos qui autem.  
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut unde consequatur nisi harum blanditiis nemo accusantium molestiae amet facere dolor earum possimus, autem nihil alias sunt, voluptates cum dolore fuga.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias odit nesciunt repudiandae unde facere, quis qui libero minus! Praesentium id repudiandae maiores dolorum optio minima excepturi beatae assumenda necessitatibus recusandae?  
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
