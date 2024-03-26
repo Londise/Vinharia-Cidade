@@ -21,6 +21,11 @@ body {
 }
 #navitems{
     text-decoration: none;
+    color: goldenrod;
+}
+#navitems:hover{
+    font-size: 27px;
+    text-decoration: underline;
 }
 
 
