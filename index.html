@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinheria Cidade</title>
-    <link rel="stylesheet" href="estilo.css">
+    <!-- Link para importar a fonte Antic Didone do Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap">
+    <!-- Link para o arquivo CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <!--ESTE É O CABEÇALHO DA PAGINA QUE CONTÊM UM MENU DE NAVEGAÇÃO, UM LOGO, CARRINHO DE COMPRAS E A OPÇÃO PROCURAR-->
@@ -25,8 +27,8 @@
         </div>
     </header>
 
-<!--ESTA É A IMAGEM PRINCIPAL DA PAGINA HOME, ELA DEVE ROLAR AUTOMATICAMENTE-->
-<div class="slider">
+    <!--ESTA É A IMAGEM PRINCIPAL DA PAGINA HOME, ELA DEVE ROLAR AUTOMATICAMENTE-->
+ <div class="slider">
 
     <div class="slides">
         <!--Radio Buttons-->
@@ -37,7 +39,7 @@
 
          <!--Slide images-->
         <div class="slide first">
-            <img src="./images/wallpaper.webp" alt="Imagem 1"/>
+            <img src="./images/wallpaper.png" alt="Imagem 1"/>
         </div>
         <div class="slide">
             <img src="./images/wallpaper2.jpg" alt="Imagem 2"/>
@@ -62,17 +64,17 @@
         <label for="radio3" class="manual-btn"></label>
      </div>
 
-</div>
+ </div>
 
-<!--ESTE É O TEXTO DE APRESENTAÇÃO-->
+ <!--ESTE É O TEXTO DE APRESENTAÇÃO-->
     <div id="div2">
-        <h1 id="header1">Quem Somos?</h1>
-        <p id="text1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo quisquam illo nihil sit inventore ea magnam quae rerum in, adipisci eius fugiat architecto praesentium assumenda eos laborum velit. Delectus, necessitatibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsam eum ullam, quaerat ipsum similique sunt qui rerum error consequatur, repellendus, quam accusantium autem laudantium! Magni maiores reprehenderit quibusdam eaque?
+        <h1 id="header1">Quem Somos?</h1>"Bem-vindo à nossa vinharia, onde a paixão pelo vinho se une à tradição e inovação para oferecer uma experiência única a todos os amantes desta nobre bebida. Nossas seleções são cuidadosamente escolhidas, abrangendo desde os clássicos amados até os tesouros escondidos das vinhas menos exploradas, garantindo uma viagem sensorial inesquecível. Acreditamos que cada garrafa conta uma história, um pedaço da terra e do tempo cristalizado em sabor, pronta para ser descoberta e compartilhada. Seja para uma celebração especial, um presente memorável ou simplesmente para apreciar a arte do vinho em sua forma mais pura, estamos aqui para guiá-lo através do maravilhoso mundo dos vinhos com expertise, paixão e um brinde à vida."</h1>
+        <p id="text1">
         </p>
     </div>
+    <!--FIM TEXTO DE APRESENTAÇÃO-->
 
-
+    <!--INICIO APRESENTANDO MELHOR PRODUTO-->       
     <div id="melhorprodutodiv">
         <img src="./images/melhorproduto.webp" id="melhorprodutoimg"/>
         <div id="melhorprodutoheadingtext">
@@ -84,6 +86,34 @@
             </p>
         </div>
     </div>
+    <!--FIM APRESENTANDO MELHOR PRODUTO-->  
+    
+    
+ <section id="portifolio">
+
+            <!--CARDS-->
+            <!--Card-1-->
+            <div class="card">
+                <img src="./images/produto1.jpg" alt="imagem" />
+                <h3>Produto 1</h3>
+                <p>Descrição do Produto 1</p>
+                <button>R$ 100,00</button>
+            </div>
+            <!--Card-2-->
+            <div class="card">
+                <img src="./images/produto2.jpg" alt="imagem" />
+                <h3>Produto 2</h3>
+                <p>Descrição do Produto 2</p>
+                <button>R$ 100,00</button>
+            </div>
+            <!--Card--->
+            <div class="card">
+                <img src="./images/produto3.jpg" alt="imagem" />
+                <h3>Produto 3</h3>
+                <p>Descrição do Produto 3</p>
+                <button>R$ 100,00</button>
+            </div>
+ </section>
 
     <script src="script.js"></script>
 </body>

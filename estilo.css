@@ -1,3 +1,13 @@
+body, h1, p {
+    font-family: 'Antic Didone', serif;
+}
+
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -21,7 +31,7 @@ body {
 }
 #navitems{
     text-decoration: none;
-    color: goldenrod;
+    color: rgb(233, 201, 122);
 }
 #navitems:hover{
     font-size: 27px;
@@ -139,3 +149,60 @@ font-size: 30px;
     margin: 0 300px;
     background-color: #ffff;
 }
+/*FIM MELHOR PRODUTO */
+/*INICIO CARDS */
+#portifolio{
+    padding-top: 100px;  /* ESPAÇAMENTO NO TOP */
+    width: 100%; /* LARGURA */
+}
+    
+.card{
+    width: 250px; /* LARGURA */
+    height: 380px; /* ALTURA  */
+    display: inline-block;/* DEIXA AS IMAGENS UMA DO LADO DA OUTRA  */
+    background-color: goldenrod;/*COR DE FUNDO  */
+    margin-top: 70px;/* MARGEM TOPO  */
+    margin-left: 10%;/*MARGEM A ESQUERDA  */
+    border-radius: 20px; /* DEIXA AS BORDAS ARREDONDADAS  */
+    text-align: center; /* TEXTO CENTRALIZADO */ 
+}
+/*CLASSE CARD E IMG  */
+.card img{
+    width: 50%; /* LARGURA DA IMAGEM  */
+    height: auto; /* ALTURA DA IMAGEM AJUSTADA AUTOMATICAMENTE  */
+}
+/* CLASSE CARD E H3 */
+.card h3{
+    font-size: 20px; /* TAMANHO DA FONTE  */ 
+    margin-top: 20px; /* MARGEM TOPO  */
+    font-family: 'Courier New', Courier, monospace;/* TIPO DE FONTE  */
+}
+/*CLASSE CARD E PARAGRAFO */
+.card p{
+    font-size: 20px; /* TAMANHO DA FONTE */
+    color:#fff; /*COR DA FONTE  */
+}
+/*CLASSE CARD E BOTÃO  */
+.card button{
+    display: block; /* DEIXA O BOTÃO FIXO */
+    margin: 10px 70px; /* DEIXA MARGEM COM 10PX DIREITA E SUPERIOR E 70PX ESQUERA E INFERIOR */
+    padding: 5px 10px; /* DEIXA ESPAÇAMENTO COM 5PX DIREITA E SUPERIOR E 10PX ESQUERA E INFERIOR */
+    background-color: #4b0082;  /*COR DE FUNDO */
+    border-radius: 10%;/* DEIXA A BORDA ARREDONDADA */
+    cursor: pointer; /* DEIXA O CURSOR DESTACADO QUANDO COLOCA O MOUSE EM CIMA */
+    width: 100px; /* LARGURA */
+    height: 50px; /* ALTURA */
+    color:#fff;/*COR DA FONTE */
+}
+/* CLASSE CARD E EFEITO HOVER */
+.card:hover{
+    background-color: #000; /* COR DE FUNDO*/
+    color: #fff; /* COR DA FONTE*/
+}
+/* CLASSE CARD E HOVER NO BOTÃO*/
+.card button:hover{
+    background-color: aquamarine;/*COR DE FUNDO */
+    color: #000;/*COR DA FONTE */
+}
+
+    
