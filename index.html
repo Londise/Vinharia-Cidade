@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinheria Cidade</title>
-    <!-- Link para importar a fonte Antic Didone do Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap">
     <!-- Link para o arquivo CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="estilo.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
 </head>
 <body>
     <!--ESTE É O CABEÇALHO DA PAGINA QUE CONTÊM UM MENU DE NAVEGAÇÃO, UM LOGO, CARRINHO DE COMPRAS E A OPÇÃO PROCURAR-->
     <header>
-        <div class="container">
-            <img src="./images/headerlogo.png" id="logocabeçalho">
-            <nav>
-                <ul id="cabeçalho">
+        
+            
+        <nav class="cabeçalho">
+                <img src="./images/headerlogo.png" class="logocabeçalho">
+                <ul id="catalogo">
                     <li><a id="navitems" href="#navitems">Home</a></li>
                     <li><a id="navitems" href="#navitems">Nossos Vinhos</a></li>
                     <li><a id="navitems"href="#navitems">Contato</a></li>
                     <li><a id="navitems" href="#navitems">Localização</a></li>
                 </ul>
-            </nav>
-        </div>
+                <ul id="icones">
+                    <li><img src="./images/lupa.png" class="lupa" alt="lupa"></li>
+                    <li><img src="./images/carrinho.gif" class="carrinho" alt="carrinho"></li>
+                </ul>
+        </nav>
+        
     </header>
 
     <!--ESTA É A IMAGEM PRINCIPAL DA PAGINA HOME, ELA DEVE ROLAR AUTOMATICAMENTE-->
  <div class="slider">
-
+    <button id="scrollToProdutos" class="btn-veja">Veja nossos produtos</button>
     <div class="slides">
-        <!--Radio Buttons-->
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
+         <!--Radio Buttons-->
+         <input type="radio" name="radio-btn" id="radio1">
+         <input type="radio" name="radio-btn" id="radio2">
+         <input type="radio" name="radio-btn" id="radio3">
          <!--FIM Radio Buttons-->
-
+         
          <!--Slide images-->
         <div class="slide first">
-            <img src="./images/wallpaper.png" alt="Imagem 1"/>
-        </div>
+             <img src="./images/wallpaper.png" alt="Imagem 1"/>
+            </div>
         <div class="slide">
             <img src="./images/wallpaper2.jpg" alt="Imagem 2"/>
         </div>
         <div class="slide">
             <img src="./images/wallpaper3.jpg" alt="Imagem 3"/>
         </div>
-         <!--FIM Slide images-->
-
-         <!--Navigation auto-->
+        <!--FIM Slide images-->
+        
+        <!--Navigation auto-->
         <div class="navigation-auto">
             <div class="auto-btn1"></div>
             <div class="auto-btn2"></div>
             <div class="auto-btn3"></div>
         </div>
-               
      </div>
 
      <div class="manual-navigation">
@@ -68,9 +71,8 @@
 
  <!--ESTE É O TEXTO DE APRESENTAÇÃO-->
     <div id="div2">
-        <h1 id="header1">Quem Somos?</h1>"Bem-vindo à nossa vinharia, onde a paixão pelo vinho se une à tradição e inovação para oferecer uma experiência única a todos os amantes desta nobre bebida. Nossas seleções são cuidadosamente escolhidas, abrangendo desde os clássicos amados até os tesouros escondidos das vinhas menos exploradas, garantindo uma viagem sensorial inesquecível. Acreditamos que cada garrafa conta uma história, um pedaço da terra e do tempo cristalizado em sabor, pronta para ser descoberta e compartilhada. Seja para uma celebração especial, um presente memorável ou simplesmente para apreciar a arte do vinho em sua forma mais pura, estamos aqui para guiá-lo através do maravilhoso mundo dos vinhos com expertise, paixão e um brinde à vida."</h1>
-        <p id="text1">
-        </p>
+        <h1 id="header1">Quem Somos?</h1>
+        <p id="text1">"Bem-vindo à nossa vinharia, onde a paixão pelo vinho se une à tradição e inovação para oferecer uma experiência única a todos os amantes desta nobre bebida. Nossas seleções são cuidadosamente escolhidas, abrangendo desde os clássicos amados até os tesouros escondidos das vinhas menos exploradas, garantindo uma viagem sensorial inesquecível. Acreditamos que cada garrafa conta uma história, um pedaço da terra e do tempo cristalizado em sabor, pronta para ser descoberta e compartilhada. Seja para uma celebração especial, um presente memorável ou simplesmente para apreciar a arte do vinho em sua forma mais pura, estamos aqui para guiá-lo através do maravilhoso mundo dos vinhos com expertise, paixão e um brinde à vida."</p>
     </div>
     <!--FIM TEXTO DE APRESENTAÇÃO-->
 
@@ -78,7 +80,7 @@
     <div id="melhorprodutodiv">
         <img src="./images/melhorproduto.webp" id="melhorprodutoimg"/>
         <div id="melhorprodutoheadingtext">
-            <h1 id="melhorproduto">Nosso melhor produto</h1>
+            <h1 id="melhorprodutoheading">Nosso melhor produto</h1>
             <p id="melhorprodutotext">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque debitis culpa repellendus possimus excepturi quae ipsam deleniti, dolorum explicabo eos aliquid voluptatem voluptas, saepe assumenda, quam aut dignissimos qui autem.  
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut unde consequatur nisi harum blanditiis nemo accusantium molestiae amet facere dolor earum possimus, autem nihil alias sunt, voluptates cum dolore fuga.
@@ -89,7 +91,7 @@
     <!--FIM APRESENTANDO MELHOR PRODUTO-->  
     
     
- <section id="portifolio">
+ <section id="nossos-produtos">
 
             <!--CARDS-->
             <!--Card-1-->

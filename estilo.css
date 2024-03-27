@@ -1,69 +1,118 @@
-body, h1, p {
-    font-family: 'Antic Didone', serif;
-}
-
-
-
-
-
-
-
 body {
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
 }
 /*ESTE É O CABEÇALHO DO SITE*/
-.container{
+.cabeçalho{
     display: flex;
     margin-top: 0;
-    gap: 200px;
+    justify-content: space-between;
+    background-color: #ffffff;
 }
-#cabeçalho {
-    background-color: #ffff;
+
+
+/*IMAGEM DO CABEÇALHO*/
+.logocabeçalho{
+    background-color: #ffffff;
+    height: 120px;
+    width: 120px;
+    margin-left: 20px;
+}
+/*CATALOGO DO CABEÇALHO*/
+#catalogo {
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    gap: 80px;
     list-style-type: none;
-    font-size: 25px;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 200px;
+    gap: 30px;
+    font-size: 18px;
+    margin-top: 18px;
+    margin-left: 70px;
+    margin-right: 400px;
+    font-weight: 400;
 }
+/*ICONES DO CABEÇALHO (CARRINHO E LUPA)*/
+#icones{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: #fff;
+    gap: 30px;
+    margin-right: 25px;
+
+
+}
+.carrinho{
+    width: 30px;
+    height: 30px;
+}
+
+.carrinho:hover {
+    transform: scale(1.2); /* Aumenta o tamanho em 20% (120% do tamanho original) */
+}
+
+.lupa{
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+}
+.lupa:hover {
+    transform: scale(1.2); /* Aumenta o tamanho em 20% (120% do tamanho original) */
+}
+
+
 #navitems{
     text-decoration: none;
-    color: rgb(233, 201, 122);
+    color: rgb(112, 92, 42);
 }
 #navitems:hover{
-    font-size: 27px;
+    font-size: 19px;
     text-decoration: underline;
 }
+/*FIM CABEÇALHO*/
 
+/*SLIDER*/
 
-#logocabeçalho {
-    height: 200px;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-
+/* Estilos para o botão "Veja nossos produtos" */
+.btn-veja {
+    position: absolute;
+    top: 390px; /* Posiciona no meio verticalmente */
+    left: 74%; /* Posiciona no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    background-color: #7c6637; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor do mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    z-index: 10; /* Garante que o botão fique sobre as imagens do slider */
 }
+
+.btn-veja:hover {
+    background-color: #5a4a28; /* Cor de fundo ao passar o mouse */
+}
+
 .slider{
     margin: 0 auto;
     width: 100%;
-    height: 645px;
+    height: 517px;
     overflow: hidden;
     background-color: #ffff;
+    position: relative;
 }
-
+/*SLIDES*/
 .slides{
     width: 400%;
-    height: 645px;
+    height: 517px;
     display: flex;
 }
 .slides input{
     display: none;
 }
 
-
+/*CADA SLIDE*/
 .slide{
     width: 25%;
     position: relative;
@@ -71,9 +120,9 @@ body {
 
 .slide img{
     width: 100%;
-    height: 645px;
+    height: 517px;
 }
-
+/*BOTÕES PARA MUDAR SLIDES*/
 .manual-navigation{
     flex-direction: row;
     justify-content: center;
@@ -107,25 +156,26 @@ body {
 #radio3:checked ~ .first{
     margin-left: -50%;
 }
-
-/*FIM CABEÇALHO*/
+/*FIM SLIDER */
 
 /*INICIO TEXTO DE APRESENTAÇÃO*/
 #div2 {
     display: inline-block;
     align-items: flex-start;
-    background-color: #ffff;
+    background-color: white;
     margin: 0 200px;
 }
 
+/* QUEM SOMOS */
 #header1 {
 text-align: center;
-font-size: 30px;
+font-size: 23px;
 }
-
+/* TEXTO DE "QUEM SOMOS" */
 #text1 {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 360;
 }
 
 /*FIM TEXTO DE APRESENTAÇÃO*/
@@ -145,13 +195,19 @@ font-size: 30px;
 #melhorprodutoheadingtext {
     display: inline-block;
     text-align: center;
-    font-size: 20px;
     margin: 0 300px;
     background-color: #ffff;
+    font-weight: 360;
+}
+#melhorprodutoheading{
+    font-size: 20px;
+}
+#melhorprodutotext{
+    font-size: 15px;
 }
 /*FIM MELHOR PRODUTO */
 /*INICIO CARDS */
-#portifolio{
+#nossos-produtos{
     padding-top: 100px;  /* ESPAÇAMENTO NO TOP */
     width: 100%; /* LARGURA */
 }
