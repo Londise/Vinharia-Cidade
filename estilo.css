@@ -67,7 +67,7 @@ body {
     color: rgb(112, 92, 42);
 }
 #navitems:hover{
-    font-size: 19px;
+    font-size: 18.5px;
     text-decoration: underline;
 }
 /*FIM CABEÇALHO*/
@@ -77,7 +77,7 @@ body {
 /* Estilos para o botão "Veja nossos produtos" */
 .btn-veja {
     position: absolute;
-    top: 390px; /* Posiciona no meio verticalmente */
+    top: 450px; /* Posiciona no meio verticalmente */
     left: 74%; /* Posiciona no meio horizontalmente */
     transform: translate(-50%, -50%); /* Centraliza o botão */
     background-color: #7c6637; /* Cor de fundo */
@@ -85,7 +85,7 @@ body {
     border: none; /* Remove a borda */
     padding: 10px 20px; /* Espaçamento interno */
     cursor: pointer; /* Cursor do mouse */
-    font-size: 16px; /* Tamanho da fonte */
+    font-size: 14px; /* Tamanho da fonte */
     transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
     z-index: 10; /* Garante que o botão fique sobre as imagens do slider */
 }
@@ -97,7 +97,7 @@ body {
 .slider{
     margin: 0 auto;
     width: 100%;
-    height: 517px;
+    height: 583px;
     overflow: hidden;
     background-color: #ffff;
     position: relative;
@@ -105,7 +105,7 @@ body {
 /*SLIDES*/
 .slides{
     width: 400%;
-    height: 517px;
+    height: 583px;
     display: flex;
 }
 .slides input{
@@ -120,7 +120,7 @@ body {
 
 .slide img{
     width: 100%;
-    height: 517px;
+    height: 583px;
 }
 /*BOTÕES PARA MUDAR SLIDES*/
 .manual-navigation{
@@ -180,31 +180,45 @@ font-size: 23px;
 
 /*FIM TEXTO DE APRESENTAÇÃO*/
 
+.produtos{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.produtos img{
+    width: 200px;
+    height: 200px;
+}
+
 /*MELHOR PRODUTO (IMAGEM + HEADING + TEXTO)*/
-#melhorprodutodiv {
+#melhorprodutosection {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    margin: 0 0;
+    gap: 140px;
 }
 #melhorprodutoimg {
     height: 400px;
     width: 400px;
 }
+.melhorprodutobox234{
+    display: flex;
+    gap: 20px;
+}
 
-#melhorprodutoheadingtext {
-    display: inline-block;
+.melhorprodutobox234 ul{
+    justify-content: center;
+    width: 200px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.melhorprodutobox234 ul img{
+    height: 100px;
+    width: 100px;
+}
+.melhorprodutobox234 ul p{
     text-align: center;
-    margin: 0 300px;
-    background-color: #ffff;
-    font-weight: 360;
 }
-#melhorprodutoheading{
-    font-size: 20px;
-}
-#melhorprodutotext{
-    font-size: 15px;
-}
+
 /*FIM MELHOR PRODUTO */
 /*INICIO CARDS */
 #nossos-produtos{
