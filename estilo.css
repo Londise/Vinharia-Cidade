@@ -150,15 +150,21 @@ body {
 #radio1:checked ~ .first{
     margin-left: 0;
 }
-#radio2:checked ~ .slide:nth-child(2) .btn-veja {
-    display: none;
-}
+
 #radio2:checked ~ .first{
     margin-left: -25%;
 }
 
+#radio2:checked ~ .btn-veja {
+    display: none;
+}
+
+
 #radio3:checked ~ .first{
     margin-left: -50%;
+}
+#radio2:checked ~ .btn-veja {
+    display: none;
 }
 /*FIM SLIDER */
 
