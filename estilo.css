@@ -166,10 +166,10 @@ body {
     margin: 0 200px;
 }
 
-/* QUEM SOMOS */
+/* HEADER QUEM SOMOS */
 #header1 {
 text-align: center;
-font-size: 23px;
+font-size: 20px;
 }
 /* TEXTO DE "QUEM SOMOS" */
 #text1 {
@@ -201,22 +201,38 @@ font-size: 23px;
     height: 400px;
     width: 400px;
 }
+
+.melhorprodutobox1{
+    margin-right: 20%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.melhorprodutobox1 h1{
+    font-size: 18px;
+}
+
 .melhorprodutobox234{
     display: flex;
     gap: 20px;
+    margin-right: 20%;
+}
+.melhorprodutobox234 p{
+    font-size: 15px;
+    font-weight: 360;
 }
 
 .melhorprodutobox234 ul{
-    justify-content: center;
+    flex-direction: row;
     width: 200px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 .melhorprodutobox234 ul img{
+    margin-left: 18%;
     height: 100px;
     width: 100px;
 }
 .melhorprodutobox234 ul p{
     text-align: center;
+    margin-left: -18%;
 }
 
 /*FIM MELHOR PRODUTO */
