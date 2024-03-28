@@ -33,7 +33,7 @@
 
     <!--ESTA É A IMAGEM PRINCIPAL DA PAGINA HOME, ELA DEVE ROLAR AUTOMATICAMENTE-->
  <div class="slider">
-    <button id="scrollToProdutos" class="btn-veja">Nossos Produtos  ></button>
+    <button id="scrollToProdutos" class="btn-veja">Nossos Produtos ></button>
     <div class="slides">
          <!--Radio Buttons-->
          <input type="radio" name="radio-btn" id="radio1">
@@ -72,7 +72,7 @@
  <!--ESTE É O TEXTO DE APRESENTAÇÃO-->
     <div id="div2">
         <h1 id="header1">Quem Somos?</h1>
-        <p id="text1">"Bem-vindo à nossa vinharia, onde a paixão pelo vinho se une à tradição e inovação para oferecer uma experiência única a todos os amantes desta nobre bebida. Nossas seleções são cuidadosamente escolhidas, abrangendo desde os clássicos amados até os tesouros escondidos das vinhas menos exploradas, garantindo uma viagem sensorial inesquecível. Acreditamos que cada garrafa conta uma história, um pedaço da terra e do tempo cristalizado em sabor, pronta para ser descoberta e compartilhada. Seja para uma celebração especial, um presente memorável ou simplesmente para apreciar a arte do vinho em sua forma mais pura, estamos aqui para guiá-lo através do maravilhoso mundo dos vinhos com expertise, paixão e um brinde à vida."</p>
+        <p id="text1">Somos uma vinharia onde a paixão pelo vinho se une à tradição e inovação para oferecer uma experiência única a todos os amantes desta nobre bebida. Nossas seleções são cuidadosamente escolhidas, abrangendo desde os clássicos amados até os tesouros escondidos das vinhas menos exploradas, garantindo uma viagem sensorial inesquecível. Acreditamos que cada garrafa conta uma história, um pedaço da terra e do tempo cristalizado em sabor, pronta para ser descoberta e compartilhada. Seja para uma celebração especial, um presente memorável ou simplesmente para apreciar a arte do vinho em sua forma mais pura, estamos aqui para guiá-lo através do maravilhoso mundo dos vinhos com expertise, paixão e um brinde à vida.</p>
     </div>
     <!--FIM TEXTO DE APRESENTAÇÃO-->
 
@@ -82,11 +82,10 @@
         <div class="melhorprodutogeneralbox">
             <div class="melhorprodutobox1">
                 <h1 id="melhorprodutoheading">Nosso melhor produto</h1>
-                <p id="melhorprodutotext">Lorem ipsum dolor sit, amet tium id repudiandae maiores dolorum optio minima excepturi beatae assumenda necessitatibus recusandae? 
-                </p>
+                <p id="melhorprodutotext"> A história da Robert Mondavi Winery começa aqui, com o To Kalon Reserve. Esta categoria representa o pináculo dos vinhos que produzimos.</p>
             </div>
             <div class="melhorprodutobox234">   
-                <ul>
+                <ul class="melhorprodutobox2">
                     <img src="./images/logocomposicao.png"/>
                     <p>Composição 97,5% Cabernet Sauvignon, 2,5% Petit Verdot</p>
                 </ul>         
@@ -103,35 +102,61 @@
     </section>
     <!--FIM APRESENTANDO MELHOR PRODUTO-->  
     
-    
- <section id="produto1" class="produtos">
-            <!--Card-1-->
-            <img src="./images/produto1.jpg"/>
-            <div>
-                <h1>PRODUTO 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus distinctio perspiciatis atque earum sit amet maiores natus incidunt repellendus aliquam magnam ut, quia eum sint nemo! Ut, illum quis?</p>
-                <button>Compre agora</button>
-            </div>
- </section>
- <section id="produto2" class="produtos">
-    <!--Card-1-->
-    <img src="./images/produto1.jpg"/>
-    <div>
-        <h1>PRODUTO 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus distinctio perspiciatis atque earum sit amet maiores natus incidunt repellendus aliquam magnam ut, quia eum sint nemo! Ut, illum quis?</p>
-        <button>Compre agora</button>
+    <!--SETOR PRODUTOS-->
+ <section class="produtos" id="produtosscroll">
+     <!--Card-1-->
+    <div id="produto1" class="produtosbox">
+        <img src="./images/vinho1.png"/>
+        <div>
+            <h1>Domaine de la Romanée-Conti Romanée-Conti Grand Cru</h1>
+            <p>Safra: Varia a cada ano <br>
+               Uva: Pinot Noir <br>
+               Maturação: 18 a 20 meses em barricas de carvalho novas <br>
+               Corpo: Médio a encorpado <br>
+               Teor Alcoólico: Geralmente em torno de 13,5% a 14,5% <br>
+               Considerado um dos vinhos mais prestigiados, este Pinot Noir é conhecido por sua complexidade aromática, estrutura elegante e potencial de envelhecimento prolongado.</p>
+            <button >Adicionar ao carrinho</button>
+        </div>
     </div>
-</section>
-<section id="produto3" class="produtos">
-    <!--Card-1-->
-    <img src="./images/produto1.jpg"/>
-    <div>
-        <h1>PRODUTO 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus distinctio perspiciatis atque earum sit amet maiores natus incidunt repellendus aliquam magnam ut, quia eum sint nemo! Ut, illum quis?</p>
-        <button>Compre agora</button>
-    </div>    
-</section>
-    
+
+    <hr>
+
+    <div id="produto2" class="produtosbox">
+        <!--Card-1-->
+        <img src="./images/vinho2.png"/>
+        <div>
+            <h1>Château Lafite Rothschild</h1>
+            <p>Safra: Varia a cada ano <br>
+               Uva: Predominantemente Cabernet Sauvignon, com Merlot, Cabernet Franc e Petit Verdot <br>
+               Maturação: 18 a 20 meses em barricas de carvalho, com cerca de 70% a 100% novas <br>
+               Corpo: Encorpado <br>
+               Teor Alcoólico: Em torno de 12,5% a 13,5% <br>
+               Emblemático de Bordeaux, é celebrado por sua elegância, complexidade e capacidade de envelhecer graciosamente, oferecendo sabores ricos e uma estrutura tânica fina.</p>
+            <button>Adicionar ao carrinho</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="produto3" class="produtosbox">
+        <!--Card-1-->
+        <img src="./images/vinho3.png"/>
+        <div>
+            <h1>Screaming Eagle Cabernet Sauvignon</h1>
+            <p> Safra: Varia a cada ano <br>
+                Uva: Cabernet Sauvignon, com pequenas quantidades de Merlot e Cabernet Franc <br>
+                Maturação:* Cerca de 20 a 24 meses em barricas de carvalho francês novas <br>
+                Corpo:* Encorpado <br>
+                Teor Alcoólico:* Geralmente em torno de 14% a 15% <br> 
+                Descrição:* Este cult wine de Napa Valley é celebrado por sua produção limitada, concentração profunda, aromas complexos e uma elegância rara, tornando-se um dos vinhos mais desejados pelos colecionadores.
+             </p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+ </section>
+
+
 
     <script src="script.js"></script>
 </body>

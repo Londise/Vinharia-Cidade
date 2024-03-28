@@ -77,12 +77,12 @@ body {
 /* Estilos para o botão "Veja nossos produtos" */
 .btn-veja {
     position: absolute;
-    top: 450px; /* Posiciona no meio verticalmente */
-    left: 74%; /* Posiciona no meio horizontalmente */
-    transform: translate(-50%, -50%); /* Centraliza o botão */
-    background-color: #7c6637; /* Cor de fundo */
-    color: #fff; /* Cor do texto */
-    border: none; /* Remove a borda */
+    top: 450px; 
+    left: 74%; 
+    transform: translate(-50%, -50%); /* CENTRALIZAR BOTÃO */
+    background-color: #7c6637; 
+    color: #fff; /* COR DE TEXTO */
+    border: none; /* REMOVE A BORDA */
     padding: 10px 20px; /* Espaçamento interno */
     cursor: pointer; /* Cursor do mouse */
     font-size: 14px; /* Tamanho da fonte */
@@ -150,9 +150,13 @@ body {
 #radio1:checked ~ .first{
     margin-left: 0;
 }
+#radio2:checked ~ .slide:nth-child(2) .btn-veja {
+    display: none;
+}
 #radio2:checked ~ .first{
     margin-left: -25%;
 }
+
 #radio3:checked ~ .first{
     margin-left: -50%;
 }
@@ -172,6 +176,8 @@ body {
 #header1 {
 text-align: center;
 font-size: 20px;
+font-weight: 400;
+color: #66433f;
 }
 /* TEXTO DE "QUEM SOMOS" */
 #text1 {
@@ -200,24 +206,31 @@ font-size: 20px;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 100px;
+    margin-bottom: 0;
     height: 500px;
     width: 100%;
 }
 .melhorprodutogeneralbox {
     margin-left: 5%;
     margin-right: 4%;
+    background-color: #ffffff;
 }
 #melhorprodutoimg {
     height: 500px;
     width: 500px;
 }
 .melhorprodutobox1{
+    height: 100px;
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 .melhorprodutobox1 h1{
+    margin-left: 2%;
+    color: #66433f;
     font-size: 18px;
+    font-weight: 400;
 }
 .melhorprodutobox1 p{
+    margin-left: 2%;
     font-size: 15px;
     font-weight: 360;
 }
@@ -226,79 +239,78 @@ font-size: 20px;
     display: flex;
     justify-content: space-between;
 }
-.melhorprodutobox234 p{
-    font-size: 15px;
-    font-weight: 360;
-}
 
 .melhorprodutobox234 ul{
     background-color: #ffffff;
     flex-direction: row;
     width: 190px;
+    padding: 0 0;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -0.5px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave cobrindo ambos lados */
 }
 .melhorprodutobox234 ul img{
     height: 100px;
     width: 100px;
+    margin-left: 23%;
 }
 .melhorprodutobox234 ul p{
     text-align: center;
+    font-size: 15px;
+    font-weight: 360;
 }
-
 /*FIM MELHOR PRODUTO */
-/*INICIO CARDS */
-#nossos-produtos{
-    padding-top: 100px;  /* ESPAÇAMENTO NO TOP */
-    width: 100%; /* LARGURA */
+
+/*INICIO PRODUTOS */
+.produtos{
+    display: inline-block;
+    background-color: rgb(255, 255, 255);/*COR DE FUNDO  */
+    margin-right: 0;
+    margin-left: 10%;
+    margin-top: 70px;
+    gap: 500px;
 }
-    
-.card{
-    width: 250px; /* LARGURA */
-    height: 380px; /* ALTURA  */
-    display: inline-block;/* DEIXA AS IMAGENS UMA DO LADO DA OUTRA  */
-    background-color: goldenrod;/*COR DE FUNDO  */
-    margin-top: 70px;/* MARGEM TOPO  */
-    margin-left: 10%;/*MARGEM A ESQUERDA  */
-    border-radius: 20px; /* DEIXA AS BORDAS ARREDONDADAS  */
-    text-align: center; /* TEXTO CENTRALIZADO */ 
+.produtosbox{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    gap: 200px;
 }
-/*CLASSE CARD E IMG  */
-.card img{
-    width: 50%; /* LARGURA DA IMAGEM  */
-    height: auto; /* ALTURA DA IMAGEM AJUSTADA AUTOMATICAMENTE  */
+.produtosbox:not(:first-child){
+    margin-top: 50px;
 }
-/* CLASSE CARD E H3 */
-.card h3{
-    font-size: 20px; /* TAMANHO DA FONTE  */ 
-    margin-top: 20px; /* MARGEM TOPO  */
-    font-family: 'Courier New', Courier, monospace;/* TIPO DE FONTE  */
+.produtosbox div{
+    background-color: #ffffff;
+    height: 300px;
+    width: 700px;
 }
-/*CLASSE CARD E PARAGRAFO */
-.card p{
-    font-size: 20px; /* TAMANHO DA FONTE */
-    color:#fff; /*COR DA FONTE  */
+.produtosbox div h1{
+    font-size: 20px;
+    font-weight: 360;
 }
-/*CLASSE CARD E BOTÃO  */
-.card button{
+.produtosbox div p{
+    font-size: 15px;
+    font-weight: 360;
+}
+/*CLASSE PRODUTOSBOX DIV (TITULO DO MELHOR PRODUTO TEXTO E BOTÃO)  */
+.produtosbox div button{
     display: block; /* DEIXA O BOTÃO FIXO */
-    margin: 10px 70px; /* DEIXA MARGEM COM 10PX DIREITA E SUPERIOR E 70PX ESQUERA E INFERIOR */
-    padding: 5px 10px; /* DEIXA ESPAÇAMENTO COM 5PX DIREITA E SUPERIOR E 10PX ESQUERA E INFERIOR */
-    background-color: #4b0082;  /*COR DE FUNDO */
-    border-radius: 10%;/* DEIXA A BORDA ARREDONDADA */
+
+    background-color: #5c291a;  /*COR DE FUNDO DO BOTÃO*/
+    border: none;
     cursor: pointer; /* DEIXA O CURSOR DESTACADO QUANDO COLOCA O MOUSE EM CIMA */
-    width: 100px; /* LARGURA */
-    height: 50px; /* ALTURA */
-    color:#fff;/*COR DA FONTE */
+    width: 180px; /* LARGURA */
+    height: 40px; /* ALTURA */
+    background-color: #7c6637; 
+    color: #fff; /* COR DE TEXTO */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* INTERAGE COM O CURSOR DO MOUSE */
+    font-size: 14px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    z-index: 10; /* Garante que o botão fique sobre as imagens do slider */
 }
-/* CLASSE CARD E EFEITO HOVER */
-.card:hover{
-    background-color: #000; /* COR DE FUNDO*/
-    color: #fff; /* COR DA FONTE*/
+.produtosbox div button:hover{
+    background-color: #5c291a;
 }
-/* CLASSE CARD E HOVER NO BOTÃO*/
-.card button:hover{
-    background-color: aquamarine;/*COR DE FUNDO */
-    color: #000;/*COR DA FONTE */
 }
+/* CLASSE PRODUTOSBOXDIV E HOVER NO BOTÃO*/
 
     
