@@ -49,7 +49,7 @@ body {
 }
 
 .carrinho:hover {
-    transform: scale(1.2); /* Aumenta o tamanho em 20% (120% do tamanho original) */
+    transform: scale(1.2); 
 }
 
 .lupa{
@@ -58,7 +58,7 @@ body {
     margin-top: 7px;
 }
 .lupa:hover {
-    transform: scale(1.2); /* Aumenta o tamanho em 20% (120% do tamanho original) */
+    transform: scale(1.2); 
 }
 
 
@@ -77,27 +77,27 @@ body {
 /* Estilos para o botão "Veja nossos produtos" */
 .btn-veja {
     position: absolute;
-    top: 450px; 
+    top: 420px; 
     left: 74%; 
     transform: translate(-50%, -50%); /* CENTRALIZAR BOTÃO */
     background-color: #7c6637; 
-    color: #fff; /* COR DE TEXTO */
-    border: none; /* REMOVE A BORDA */
-    padding: 10px 20px; /* Espaçamento interno */
-    cursor: pointer; /* Cursor do mouse */
-    font-size: 14px; /* Tamanho da fonte */
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
-    z-index: 10; /* Garante que o botão fique sobre as imagens do slider */
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
+    z-index: 10; 
 }
 
 .btn-veja:hover {
     background-color: #5a4a28; /* Cor de fundo ao passar o mouse */
 }
-
+/*SLIDER DE IMAGENS */
 .slider{
     margin: 0 auto;
     width: 100%;
-    height: 583px;
+    height: 515px;
     overflow: hidden;
     background-color: #ffff;
     position: relative;
@@ -105,7 +105,7 @@ body {
 /*SLIDES*/
 .slides{
     width: 400%;
-    height: 583px;
+    height: 515px;
     display: flex;
 }
 .slides input{
@@ -116,11 +116,12 @@ body {
 .slide{
     width: 25%;
     position: relative;
+    transition: 0.04s;
 }
 
 .slide img{
     width: 100%;
-    height: 583px;
+    height: 515px;
 }
 /*BOTÕES PARA MUDAR SLIDES*/
 .manual-navigation{
@@ -128,7 +129,7 @@ body {
     justify-content: center;
     position: absolute; 
     width: 100%;
-    margin-top: -20px;
+    margin-top: -40px;
     display: flex;
 }
 
@@ -159,13 +160,16 @@ body {
     display: none;
 }
 
-
 #radio3:checked ~ .first{
     margin-left: -50%;
 }
-#radio2:checked ~ .btn-veja {
+#radio3:checked ~ .btn-veja {
     display: none;
 }
+.hidden {
+    display: none;
+}
+
 /*FIM SLIDER */
 
 /*INICIO TEXTO DE APRESENTAÇÃO*/
@@ -226,17 +230,20 @@ color: #66433f;
     width: 500px;
 }
 .melhorprodutobox1{
-    height: 100px;
-    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    height: 120px;
+    padding-top: 1px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -0.5px -0.5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 .melhorprodutobox1 h1{
-    margin-left: 2%;
+    margin-left: 3%;
+    margin-right: 10%;
     color: #66433f;
     font-size: 18px;
     font-weight: 400;
 }
 .melhorprodutobox1 p{
-    margin-left: 2%;
+    margin-left: 3%;
+    margin-right: 10%;
     font-size: 15px;
     font-weight: 360;
 }
@@ -244,22 +251,25 @@ color: #66433f;
 .melhorprodutobox234{
     display: flex;
     justify-content: space-between;
+    height: 280;
 }
 
 .melhorprodutobox234 ul{
     background-color: #ffffff;
     flex-direction: row;
-    width: 190px;
+    width: 230px;
     padding: 0 0;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -0.5px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave cobrindo ambos lados */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1), -0.5px -0.5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave cobrindo ambos lados */
 }
 .melhorprodutobox234 ul img{
     height: 100px;
     width: 100px;
-    margin-left: 23%;
+    margin-left: 29%;
+    margin-bottom: 0;
 }
 .melhorprodutobox234 ul p{
     text-align: center;
+    margin-top: 0;
     font-size: 15px;
     font-weight: 360;
 }
@@ -291,32 +301,125 @@ color: #66433f;
 .produtosbox div h1{
     font-size: 20px;
     font-weight: 360;
+    color: #694a37;
+
 }
 .produtosbox div p{
     font-size: 15px;
     font-weight: 360;
+    color: #694a37;
 }
-/*CLASSE PRODUTOSBOX DIV (TITULO DO MELHOR PRODUTO TEXTO E BOTÃO)  */
-.produtosbox div button{
-    display: block; /* DEIXA O BOTÃO FIXO */
 
-    background-color: #5c291a;  /*COR DE FUNDO DO BOTÃO*/
+.produtosbox div button{
+    display: block; 
+
+  
     border: none;
-    cursor: pointer; /* DEIXA O CURSOR DESTACADO QUANDO COLOCA O MOUSE EM CIMA */
-    width: 180px; /* LARGURA */
-    height: 40px; /* ALTURA */
+    cursor: pointer; 
+    width: 180px; 
+    height: 40px; 
     background-color: #7c6637; 
-    color: #fff; /* COR DE TEXTO */
-    padding: 10px 20px; /* Espaçamento interno */
-    cursor: pointer; /* INTERAGE COM O CURSOR DO MOUSE */
-    font-size: 14px; /* Tamanho da fonte */
-    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
-    z-index: 10; /* Garante que o botão fique sobre as imagens do slider */
+    color: #fff; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
+    z-index: 10; 
 }
 .produtosbox div button:hover{
     background-color: #5c291a;
 }
+/*FIM PRODUTOS */
+/*ESTILIZANDO HR*/
+.produtos hr {
+    border-top: 1px solid #bead80;
+    border-radius: 10px;
 }
-/* CLASSE PRODUTOSBOXDIV E HOVER NO BOTÃO*/
+/* FIM ESTILIZAÇÃO HR*/
+/* ESPAÇAMENTO E ESTILIZAÇÃO HR FOOTER */
+.hr-footer1{
+    border-top: 1px solid #bead80;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.hr-footer2{
+    border-top: 1px solid #bead80;
+    border-radius: 10px;
+    margin-top: 30px;
+}
 
-    
+.hr-footer3{
+    border-top: 1px solid #bead80;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.siga-a-gente{
+
+    text-align: center;
+    color: #694a37;
+    font-size: 18px;
+    font-weight: 400;
+}
+.social-media{
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+}
+.social-media img{
+    height: 40px;
+    width: 40px;
+}
+.social-media img:hover{
+    height: 42px;
+    width: 42px;
+}
+.informações{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.pagamento{
+    display: block;
+}
+.pagamento p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #694a37;
+}
+.formas-de-pagamento{
+    display: flex;
+    gap: 10px;
+}
+.formas-de-pagamento img{
+    height: 50px;
+    width: 50px;
+}
+.atendimento{
+    color: #694a37;
+    display: block;
+    height: 150px;
+}
+.atendimento p:first-child{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.atendimento p:not(:first-child){
+    font-size: 14px;
+    font-weight: 360;
+    line-height: 0.5;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-weight: 360;
+}
