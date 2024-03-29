@@ -318,12 +318,12 @@ color: #66433f;
     flex-direction: row;
     display: flex;
     gap: 200px;
+    
 }
 .produtosbox:not(:first-child){
     margin-top: 50px;
 }
 .produtosbox div{
-    background-color: #ffffff;
     height: 300px;
     width: 700px;
 }
@@ -339,15 +339,13 @@ color: #66433f;
     color: #694a37;
 }
 
-.produtosbox div button{
+#adicionar-carrinho{
     display: block; 
-
-  
     border: none;
     cursor: pointer; 
+    background-color: #7c6637; 
     width: 180px; 
     height: 40px; 
-    background-color: #7c6637; 
     color: #fff; 
     padding: 10px 20px; 
     cursor: pointer; 
@@ -355,8 +353,32 @@ color: #66433f;
     transition: background-color 0.3s ease; 
     z-index: 10; 
 }
-.produtosbox div button:hover{
+#preço{
+    display: block; 
+    border:solid;
+    border-width: 1px;
+    width: 180px; 
+    height: 40px; 
+    background-color: #fff9ec;
+    color: #7c6637; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
+    z-index: 10; 
+}
+#adicionar-carrinho:hover{
     background-color: #5c291a;
+
+
+}
+#preço:hover{
+}
+.box-button-carrinho-compra{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 0;
+    justify-content: flex-start;
+    gap: 15px;
 }
 /*FIM PRODUTOS */
 /*ESTILIZANDO HR*/
