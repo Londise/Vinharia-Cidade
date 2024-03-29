@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+//RELOAD EM HOME//
 document.addEventListener('DOMContentLoaded', function() {
     const homeLink = document.getElementById('navitems');
     homeLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita o comportamento padrão do link
-        location.reload(); // Recarrega a página
+        event.preventDefault(); // 
+        location.reload(); // 
     });
 });
 
@@ -37,11 +37,11 @@ function nextImage(){
     document.getElementById("radio"+count).checked = true;
 }
 
-// Obtenha o botão e os slides
+// BOTÕES E SLIDES
 const scrollToProdutos = document.getElementById('scrollToProdutos');
 const slides = document.querySelectorAll('.slide');
 
-// Adicione um evento de escuta para a transição dos slides
+// VERIFICA AS TRANSIÇÕES DOS SLIDES
 slides.forEach(slide => {
         slide.addEventListener('transitionstart', () => {
             scrollToProdutos.classList.add('hidden');
@@ -52,8 +52,20 @@ slides.forEach(slide => {
         });
     });
 
+//LUPA//
+let boxBuscar = document.querySelector('.buscar-box')
+let lupa = document.querySelector('.lupa-buscar')
+let btnFechar = document.querySelector('.btn-fechar')
 
 
+
+lupa.addEventListener('click', ()=> {
+    boxBuscar.classList.add('ativar')
+})
+
+btnFechar.addEventListener('click', ()=> {
+    boxBuscar.classList.remove('ativar')
+})
 
 
 

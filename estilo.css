@@ -7,8 +7,6 @@ body {
 .cabeçalho{
     display: flex;
     margin-top: 0;
-    justify-content: space-between;
-    background-color: #ffffff;
 }
 
 
@@ -25,11 +23,11 @@ body {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 30px;
+    gap: 35px;
     font-size: 18px;
     margin-top: 18px;
     margin-left: 70px;
-    margin-right: 400px;
+    margin-right: 20%;
     font-weight: 400;
 }
 /*ICONES DO CABEÇALHO (CARRINHO E LUPA)*/
@@ -37,38 +35,69 @@ body {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    background-color: #fff;
-    gap: 30px;
-    margin-right: 25px;
-
-
 }
 .carrinho{
     width: 30px;
     height: 30px;
+    margin-left: -20px;
 }
 
 .carrinho:hover {
     transform: scale(1.2); 
 }
 
-.lupa{
-    width: 20px;
-    height: 20px;
-    margin-top: 7px;
-}
-.lupa:hover {
-    transform: scale(1.2); 
-}
-
-
 #navitems{
     text-decoration: none;
     color: rgb(112, 92, 42);
 }
 #navitems:hover{
-    font-size: 18.5px;
+    font-size: 18px;
     text-decoration: underline;
+}
+.buscar-box{
+    width: 35px;
+    height: 60px;
+    margin-right: 0;
+    margin-left: 265px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: .5s;
+}
+.buscar-box.ativar{
+    width: 300px;
+    margin-left: 0;
+}
+
+.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
+    background-color: rgb(255, 255, 255);
+    min-width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.buscar-box .lupa-buscar i{
+    font-size: 20px;
+}
+.buscar-box .input-buscar{
+    left: 40px;
+    position: absolute;
+    width: calc(100%-120px);
+    height: 100%;
+    line-height: 60px;
+}
+.buscar-box .input-buscar input{
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+.buscar-box .btn-fechar i{
+    font-size: 25px;
+    margin-right: 35px;
 }
 /*FIM CABEÇALHO*/
 
