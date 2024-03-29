@@ -1,3 +1,16 @@
+//VERIFICAÇÃO DE IDADE//
+function filtrodeidade(simounao) {
+        if (simounao === 'sim') {
+            document.getElementById('popup').style.display = 'none';
+        }
+        else if(simounao === 'nao') {
+            window.location.href = 'https://www.google.com'
+        }
+    }
+
+
+
+
 
 //FAZ COM QUE O BOTÃO NOSSOS PRODUTOS FAÇA UM SCROLL ATÉ A SUA SEÇÃO NA PÁGINA//
 document.addEventListener('DOMContentLoaded', function() {

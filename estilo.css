@@ -3,6 +3,72 @@ body {
     padding: 0;
     font-family: "Open Sans", sans-serif;
 }
+
+.popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+.popup::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    backdrop-filter: blur(4px); /* Altere o valor do blur conforme desejado */
+    z-index: -1;
+}
+
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 400px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.buttons-popup{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.buttons-popup button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    border:solid;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: #fff9ec;
+    color: #7c6637; 
+}
+.popup p{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*ESTE É O CABEÇALHO DO SITE*/
 .cabeçalho{
     display: flex;
