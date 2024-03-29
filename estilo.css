@@ -308,9 +308,48 @@ color: #66433f;
     font-size: 15px;
     font-weight: 360;
 }
+.box-buttons-melhor-produto{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 25%;
+    gap: 20px;
+}
+
+#vejamais{
+    display: block; 
+    border:solid;
+    border-width: 1px;
+    width: 180px; 
+    height: 40px; 
+    cursor: pointer;
+    background-color: #fff9ec;
+    color: #7c6637; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
+    z-index: 10; 
+}
+#vejamais:hover{
+    background-color: #f1e6cb;
+}
+
 /*FIM MELHOR PRODUTO */
+.hr-color{
+    border-top: 1px solid #bead80;
+    border-radius: 10px;
+    margin-bottom: 0;
+    margin-top: 60px;
+}
 
 /*INICIO PRODUTOS */
+#Nossos-Produtos{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    color: #66433f;
+    font-weight: 400;
+}
 .produtos{
     display: inline-block;
     background-color: rgb(255, 255, 255);/*COR DE FUNDO  */
