@@ -106,7 +106,7 @@ body {
 /* Estilos para o botão "Veja nossos produtos" */
 .btn-veja {
     position: absolute;
-    top: 420px; 
+    top: 400px; 
     left: 74%; 
     transform: translate(-50%, -50%); /* CENTRALIZAR BOTÃO */
     background-color: #7c6637; 
