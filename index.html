@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinheria Cidade</title>
+    <title>ProjetoVinharia</title>
     <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="estilo.css">
     <style>
@@ -12,90 +12,91 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <!--ESTE É O CABEÇALHO DA PAGINA QUE CONTÊM UM MENU DE NAVEGAÇÃO, UM LOGO, CARRINHO DE COMPRAS E A OPÇÃO PROCURAR-->
-    <header>
-        
-            
+    <!--CABEÇALHO DA PAGINA QUE CONTÊM UM MENU DE NAVEGAÇÃO, UM LOGO, CARRINHO DE COMPRAS E A OPÇÃO PROCURAR-->
+    <header>    
         <nav class="cabeçalho">
-                <img src="./images/headerlogo.png" class="logocabeçalho">
-                <ul id="catalogo">
-                    <li><a id="navitems" href="#Home">Home</a></li>
-                    <li><a id="navitems" href="#nossos-vinhos">Nossos Vinhos</a></li>
-                    <li><a id="navitems"href="#Contato">Contato</a></li>
-                    <li><a id="navitems" href="#Localização">Localização</a></li>
-                </ul>
-                <div class="buscar-box">
-                    <div class="lupa-buscar">
-                        <i class="bi bi-search"></i>
+            <img src="./images/headerlogo.png" class="logocabeçalho">
+            <!--MENU DE NAVEGAÇÃO-->
+            <ul id="catalogo">
+                <li><a id="navitems" href="#Home">Home</a></li>
+                <li><a id="navitems" href="#QuemSomos">Quem Somos</a></li>
+                <li><a id="navitems" href="#nossos-vinhos">Nossos Vinhos</a></li>
+                <li><a id="navitems" href="#Contato">Contato</a></li>
+                <li><a id="navitems" href="https://maps.app.goo.gl/A7zVXB29cDymhmBr9">Localização</a></li>
+            </ul>
+            <!--FIM MENU DE NAVEGAÇÃO-->
 
-                    </div>
+            <!--CARRINHO E BARRA DE BUSCA-->
+            <div class="buscar-box">
+                <div class="lupa-buscar">
+                    <i class="bi bi-search"></i>
 
-                    <div class="input-buscar">
-                        <input type="text" name="" id="" placeholder="O que você precisa?">
+                 </div>
 
-                    </div>
-
-                    <div class="btn-fechar">
-                        <i class="bi bi-x"></i>
-                    </div>
-
-
+                <div class="input-buscar">
+                    <input type="text" name="" id="" placeholder="O que você precisa?">
 
                 </div>
-                <ul id="icones">
-                    <li><a href="#carrinho"><img src="./images/carrinho.gif" class="carrinho" alt="carrinho"></a></li>
-                </ul>
-        </nav>
 
-    
-    </header>
-
-    <!--ESTA É A IMAGEM PRINCIPAL DA PAGINA HOME, ELA DEVE ROLAR AUTOMATICAMENTE-->
- <div class="slider">
-     <div class="slides">
-         <!--Radio Buttons-->
-         <input type="radio" name="radio-btn" id="radio1">
-         <input type="radio" name="radio-btn" id="radio2">
-         <input type="radio" name="radio-btn" id="radio3">
-         <button id="scrollToProdutos" class="btn-veja">Nossos Produtos ></button>
-         <!--FIM Radio Buttons-->
-         
-         <!--Slide images-->
-        <div class="slide first">
-             <img src="./images/wallpaper.png" alt="Imagem 1"/>
+                <div class="btn-fechar">
+                    <i class="bi bi-x"></i>
+                </div>
             </div>
-        <div class="slide">
-            <img src="./images/wallpaper2.png" alt="Imagem 2"/>
-        </div>
-        <div class="slide">
-            <img src="./images/wallpaper3.png" alt="Imagem 3"/>
-        </div>
-        <!--FIM Slide images-->
-        
-        <!--Navigation auto-->
-        <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-        </div>
-     </div>
+            <ul id="icones">
+                <li><a href="#carrinho"><img src="./images/carrinho.gif" class="carrinho" alt="carrinho"></a></li>
+            </ul>
+                <!--FIM CARRINHO E BARRA DE BUSCA-->
+        </nav>
+    </header>
+    <!--FIM CABEÇALHO-->
 
-     <div class="manual-navigation">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-     </div>
+    <!--ESTE É O SLIDER INTERATIVO QUE CONTÉM OS SLIDES-->
+    <div class="slider">
+        <div class="slides">
+            
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <button id="scrollToProdutos" class="btn-veja">Nossos Produtos ></button>
+            
+            
+            
+            <div class="slide first">
+                <img src="./images/wallpaper.png" alt="Imagem 1"/>
+                </div>
+            <div class="slide">
+                <img src="./images/wallpaper2.png" alt="Imagem 2"/>
+            </div>
+            <div class="slide">
+                <img src="./images/wallpaper3.png" alt="Imagem 3"/>
+            </div>
+            
+            
+            
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+            
+        </div>
+            
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+    </div>
+    <!--FIM DO SLIDER INTERATIVO-->
 
- </div>
-
- <!--ESTE É O TEXTO DE APRESENTAÇÃO-->
-    <div id="div2">
+    <!--ESTE É O TEXTO DE APRESENTAÇÃO-->
+    <section id="QuemSomos">
         <h1 id="header1">Quem Somos?</h1>
         <p id="text1">Somos uma vinharia onde a paixão pelo vinho se une à tradição e inovação para oferecer uma experiência única a todos os amantes desta nobre bebida. Nossas seleções são cuidadosamente escolhidas, abrangendo desde os clássicos amados até os tesouros escondidos das vinhas menos exploradas, garantindo uma viagem sensorial inesquecível. Acreditamos que cada garrafa conta uma história, um pedaço da terra e do tempo cristalizado em sabor, pronta para ser descoberta e compartilhada. Seja para uma celebração especial, um presente memorável ou simplesmente para apreciar a arte do vinho em sua forma mais pura, estamos aqui para guiá-lo através do maravilhoso mundo dos vinhos com expertise, paixão e um brinde à vida.</p>
-    </div>
+    </section>
     <!--FIM TEXTO DE APRESENTAÇÃO-->
 
-    <!--INICIO APRESENTANDO MELHOR PRODUTO-->       
+    <!--APRESENTANDO MELHOR PRODUTO-->       
     <section class="melhorprodutosection">
         <img src="./images/melhorproduto.webp" id="melhorprodutoimg"/>
         <div class="melhorprodutogeneralbox">
@@ -123,7 +124,7 @@
     
     <!--SETOR PRODUTOS-->
     <section class="produtos" id="produtosscroll">
-     <!--Card-1-->
+        <!--PRODUTO 1-->
         <div id="produto1" class="produtosbox">
             <img src="./images/vinho1.png"/>
             <div>
@@ -141,11 +142,12 @@
                 
             </div>
         </div>
+        <!--FIM PRODUTO 1-->
 
     <hr class="hr-color"></hr>
 
+        <!--PRODUTO 2-->
         <div id="produto2" class="produtosbox">
-        <!--Card 2-->
             <img src="./images/vinho2.png"/>
             <div>
                 <h1>Château Lafite Rothschild</h1>
@@ -162,11 +164,12 @@
                    </div>
             </div>
         </div>
+        <!--FIM PRODUTO 2-->
 
     <hr class="hr-color"></hr>
 
         <div id="produto3" class="produtosbox">
-        <!--Card 3-->
+        <!--PRODUTO 3-->
             <img src="./images/vinho3.png"/>
             <div>
                 <h1>Screaming Eagle Cabernet Sauvignon</h1>
@@ -183,11 +186,12 @@
                  </div>
             </div>
         </div>
+        <!--FIM PRODUTO 3-->
 
     <hr class="hr-color">
 
 
-        <!--Card 4-->
+        <!--PRODUTO 4-->
         <div id="produto4" class="produtosbox">
             <img src="./images/vinho4.png"/>
             <div>
@@ -205,10 +209,11 @@
                 </div>
             </div>
         </div>
+        <!--FIM PRODUTO 4-->
     
     <hr class="hr-color">
 
-        <!--Card 5-->
+        <!--PRODUTO 5-->
         <div id="produto5" class="produtosbox">
                 <img src="./images/vinho5.png"/>
             <div>
@@ -226,9 +231,12 @@
                  </div>
             </div>
         </div>
+        <!--FIM PRODUTO 5-->
+
     <hr class="hr-color">
+        
+        <!--PRODUTO 6-->
         <div id="produto6" class="produtosbox">
-                <!--Card-1-->
             <img src="./images/vinho6.png"/>
             <div>
                 <h1>Henri Jayer Richebourg Grand Cru</h1>
@@ -245,49 +253,58 @@
                  </div>
             </div>
         </div>
+        <!--FIM PRODUTO 6-->
 
-</section>
+    </section>
+    <!--FIM PRODUTOS-->
 
-<hr class="hr-footer1">
-
-<footer>
-<p class="siga-a-gente">Siga-nos</p>
- <section class="social-media">
-     <img src="./images/instagramicon.png" alt="icone-instagram"/>
-     <img src="./images/tiktokicon.png" alt="icone-tiktok" />
-     <img src="./images/pinteresticon.png" alt="icone-instagram" />
-     <img src="./images/twittericon.png" alt="icone-twitter" />    
- </section>
+    <hr class="hr-footer1">
+    
+    <!--RODAPÉ-->
+    <footer>
+        <p class="siga-a-gente">Siga-nos</p>
+        <section class="social-media">
+            <img src="./images/instagramicon.png" alt="icone-instagram"/>
+            <img src="./images/tiktokicon.png" alt="icone-tiktok" />
+            <img src="./images/pinteresticon.png" alt="icone-instagram" />
+            <img src="./images/twittericon.png" alt="icone-twitter" />    
+        </section>
 
 <hr class="hr-footer2">
 
- <section class="informações">
-    <div class="pagamento">
-        <p>FORMAS DE PAGAMENTO</p>
-        <div class="formas-de-pagamento">
-            <img src="./images/applepay.png"/>
-            <img src="./images/googlepay.png"/>
-            <img src="./images/mastercard.png"/>
-            <img src="./images/visa.png"/>
-        </div>
+        <!--SEÇÃO DE INFORMAÇÕES E FORMAS DE PAGAMENTO-->
+        <section class="informações">
+            <div class="pagamento">
+                <p>FORMAS DE PAGAMENTO</p>
+                <div class="formas-de-pagamento">
+                    <img src="./images/applepay.png"/>
+                    <img src="./images/googlepay.png"/>
+                    <img src="./images/mastercard.png"/>
+                    <img src="./images/visa.png"/>
+                </div>
 
-    </div>
-    <div class="atendimento">
-        <p>ATENDIMENTO AO CLIENTE</p>
-        <p>horário de atendimento: 8h às 18h</p>
-        <p>+55 11 9XXXX-XXXX</p>
-        <p>contato@vinhariacidade.com.br</p>
-    </div>
- </section>
+            </div>
+            <div class="atendimento" id="contatoscroll">
+                <p>ATENDIMENTO AO CLIENTE</p>
+                <p>horário de atendimento: 8h às 18h</p>
+                <p>+55 11 9XXXX-XXXX</p>
+                <p>contato@vinhariacidade.com.br</p>
+            </div>
+        </section>
+        <!--FIM SEÇÃO DE INFORMAÇÕES E FORMAS DE PAGAMENTO-->  
+        
 <hr class="hr-footer3">
-<section class="copyright">
-    <p>Experimente nossos vinhos com responsabilidade</p>
-    <p>Vinheria Cidade @ Todos os direitos reservados</p>
-</section>
 
-</footer>
+        <!--ULTIMA SEÇÃO DA PAGINA COM A LIÇENÇA E UMA PRECAUÇÃO-->
+        <section class="copyright">
+            <p>Experimente nossos vinhos com responsabilidade</p>
+            <p>Vinheria Cidade @ Todos os direitos reservados</p>
+        </section>
+        <!--FIM DE ULTIMA SEÇÃO DA PAGINA COM A LIÇENÇA E UMA PRECAUÇÃO-->
+    </footer>
+    <!--FIM RODAPÉ-->
 
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!--CHAMANDO JAVASCRIPT-->
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+//FAZ COM QUE O BOTÃO NOSSOS PRODUTOS FAÇA UM SCROLL ATÉ A SUA SEÇÃO NA PÁGINA//
 document.addEventListener('DOMContentLoaded', function() {
     const scrollToProdutos = document.getElementById('scrollToProdutos');
     const produtosscroll = document.getElementById('produtosscroll');
@@ -9,6 +11,32 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+//FAZ COM QUE O BOTÃO QUEM SOMOS FAÇA UM SCROLL ATÉ A SUA SEÇÃO NA PÁGINA//
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('a[href="#QuemSomos"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('QuemSomos').scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
+//FAZ COM QUE O BOTÃO NOSSOS VINHOS FAÇA UM SCROLL ATÉ A SUA SEÇÃO NA PÁGINA//
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('a[href="#nossos-vinhos"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('produtosscroll').scrollIntoView({ behavior: 'smooth' });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('a[href="#Contato"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('contatoscroll').scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
+//FAZ COM QUE O HOVER NO TEXTO QUEM SOMOS FAÇA UM SCROLL ATÉ A SUA SEÇÃO NA PÁGINA//
 
 
 //RELOAD EM HOME//
@@ -28,7 +56,7 @@ document.getElementById("radio1").checked = true;
 
 setInterval( function(){
     nextImage();
-}, 7000)
+}, 5000)
 function nextImage(){
     count++;
     if(count>3){
