@@ -1,4 +1,2 @@
-FERNANDO CARLOS RM 558095
-VICTOR CAPP RM 555753
-RAFAEL FERRARI RM 556655
-PAULO AKIRA RM 556840
+This is a special project since is the first ever website i have done and it has a special place in my heart because of that, it was made with only HTML5, which includes such technologies as HTML, CSS and JavaScript.
+
